@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  jupyterlab-server:
+    build: .
+    container_name: jupyterlab
+    volumes:
+      - ./notebooks/:/home
+    ports:
+      - "8888:8888"
